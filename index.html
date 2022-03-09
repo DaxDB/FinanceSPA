@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/containers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-title">
+                <img class="img-logo" src="./assets/img/logo.png" alt="logotipo">
+                <div class="menu-title">
+                    <h4>Controle Financeiro</h4>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="register"><a href="#">Cadastrar Transação</a></li>
+                <li class="bar">│</li>
+                <li class="clean"><a href="#">Limpar Dados</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <form class="section">
+            <div class="transaction-container">
+                <h1 class="title-transaction">Nova Transação</h1>
+                <div class="fields">
+                    <div class="select-container">
+                        <h4>Transação</h4>
+                        <select required id="input-select" name="field">
+                            <option value="Compra">Compra</option>
+                            <option value="Venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="div-name">
+                        <h4 class="name">Nome da Mercadoria</h4>
+                        <input required id="input-name" type="text" placeholder="Nome" />
+                    </div>
+                    <div class="div-value">
+                        <h4 class="value">Valor</h4>
+                        <input required id="input-value" type="text" placeholder="R$ 0,00">
+                    </div>
+
+                </div>
+                <div class="div-button">
+                    <input type="submit" class="add" value="Adicionar transação" />
+
+                </div>
+            </div>
+
+            <div class="extract-container">
+                <h2 class="extract-title">Extrato de Transações</h2>
+
+                <table id="transact-table">
+                    <tr>
+                        <td></td>
+                        <td style="font-weight: bold;">Mercadoria</td>
+                        <td style="text-align: end; padding-right: 10px; font-weight: bold;">Valor</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Mouse</td>
+                        <td style="text-align: end; padding-right: 10px;">R$ 60,00</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Teclado</td>
+                        <td style="text-align: end; padding-right: 10px;">R$ 70,00</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: none ;">-</td>
+                        <td style="border-bottom: none; font-weight: bold;">Total</td>
+                        <td style="text-align: end; border-bottom: none; padding-right: 10px; font-weight: bold;">R$ 130,00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+    </main>
+    <script src="./assets/js/mobile-nav.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>

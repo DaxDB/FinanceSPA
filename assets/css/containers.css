@@ -1,0 +1,201 @@
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 20px 0 20px;
+    align-items: baseline;
+  }
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 4px;
+    border: solid #979797 1px; 
+    width: 30%;
+    gap: 20px;
+    
+}
+  
+.transaction-container h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 50px;
+
+}
+  
+.fields {
+      width: 100%;
+}
+.fields h4 {
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 5px;
+}
+  
+.value, .name{
+    padding-top: 20px;
+}
+  
+  
+select{
+    color: #888;
+}
+  
+  
+.fields select {
+    margin: 0;
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    padding-left: 6px;
+}
+  
+  
+  
+.fields input {
+    margin: 0;
+    width: 97%;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #888888;
+    padding-left: 6px;
+    padding-right: 0;
+}
+  
+.add {
+    margin: 0;
+    border: 0;
+    width: 100%;
+    background-color: #333333;
+    height: 32px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.div-button {
+    width: 100%;
+}
+  
+.extract-container{
+    width: 50%;
+}
+  
+.extract-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 50px;
+    
+}   
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+td {
+    border-bottom: solid #979797 1px;
+    font-size: 14px;
+    line-height: 25px; 
+    color: #000000;
+    white-space: nowrap;
+    text-align: start;
+    font-weight: normal;
+    
+}
+h2 {
+    text-align: center;
+}
+   
+#input-select, #input-name, #input-value {
+    border: 2px solid;
+    border:  2px transparent #979797;
+  
+}
+  
+
+@media screen and (max-width:768px) {
+    .section {
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .transaction-container {
+        width: 95%;
+        display: block;
+        flex-direction: row;
+    }
+    .extract-container {
+        width: 99%;
+    }
+    .fields {
+        display: flex;
+        align-items:center;
+      }
+      .title-transaction {
+        text-align: center;
+     }
+     .select-container {
+         width: 25%;
+     }
+     .select-container h4 {
+         padding-top: 20px;
+         white-space: nowrap;
+     }
+    .div-name {
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .div-value {
+        width: 25%;
+        margin-right: 5px;
+    }
+    .div-button {
+        text-align: end;
+    }
+   
+    .add {
+        margin-top: 20px;
+        width: 35%;
+    }
+}
+  
+@media screen and (max-width:411px) {
+    .transaction-container {
+        border: none;
+        margin-top: 0px;
+    }
+    .title-transaction {
+        display: none;
+    }
+    .select-container,
+    .div-name,
+    .div-value,
+    .add {
+        width: 100%;
+    }
+    .fields {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .extract-container {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+    
+
+    
+
+ 
+  
